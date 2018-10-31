@@ -13,6 +13,7 @@ class TodoList extends React.Component {
 
     this.addItem = this.addItem.bind(this)
     this.deleteItem = this.deleteItem.bind(this)
+    this.toggleItem = this.toggleItem.bind(this)
   }
 
   addItem(e) {
@@ -30,7 +31,6 @@ class TodoList extends React.Component {
 
       this._inputElement.value = ''
     }
-    console.log(this.state.items)
 
     e.preventDefault()
   }
@@ -45,6 +45,13 @@ class TodoList extends React.Component {
     })
   }
 
+  toggleItem(text) {
+    let toggledItems = this.state.items.filter(function(item) {
+      return item.text === text
+    })
+    return toggledItems
+  }
+
   render() {
     return (
       <div className="todoListMain">
@@ -57,7 +64,11 @@ class TodoList extends React.Component {
             <button type="submit">add</button>
           </form>
         </div>
-        <ToDoItems entries={this.state.items} delete={this.deleteItem} />
+        <ToDoItems
+          entries={this.state.items}
+          delete={this.deleteItem}
+          toggle={this.toggleItem}
+        />
       </div>
     )
   }

@@ -8,21 +8,41 @@ class ToDoItems extends React.Component {
 
     this.createTasks = this.createTasks.bind(this)
   }
+
   delete(key) {
     this.props.delete(key)
   }
 
+  toggle(text) {
+    this.props.toggle(text)
+    console.log(text)
+    
+  }
+
   createTasks(item) {
     return (
-      <li onClick={() => this.delete(item.key)} key={item.key}>
-        {item.text}
-      </li>
+      <div>
+        <li
+          onClick={() => this.delete(item.key)}
+          key={item.key}
+          className="list-item"
+        >
+          {item.text}
+          <span />
+        </li>
+        <input
+          type="checkbox"
+          className="checkbox"
+          onClick={() => this.toggle(item)}
+        />
+      </div>
     )
   }
 
   render() {
     let todoEntries = this.props.entries
     let listItems = todoEntries.map(this.createTasks)
+
     return (
       <ul className="theList">
         <FlipMove duration={250} easing="ease-out">

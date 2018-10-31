@@ -33,13 +33,105 @@ ul.theList {
   color: #333;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   border-radius: 5px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  background-image: url('http://4.bp.blogspot.com/-gaOUWVZ2kQA/U0V5uyHYPvI/AAAAAAAAAbE/Mw2MFpKjEOg/s1600/a-piece-of-paper-by-adnap-ralopib-d2xh2nw.png');
+  background-size: cover;
+  background-position-y: -22%;
+  position: relative;
+}
+
+.todoListMain .theList span {
+  background-image: url('https://poppyhillcreations.files.wordpress.com/2012/07/light-orange-freebie-washi-tape.png');
+  height: 106px;
+  width: 200px;
+  position: absolute;
+  top: -38px;
+  background-size: cover;
+  left: 21px;
+  -webkit-animation: popin 4s;
+  animation: popin 4s;
+  z-index: 2;
+}
+
+.todoListMain .theList input {
+  float: right;
+  position: relative;
+  right: -25px;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  top: -33px;
 }
 
 .todoListMain .theList li:hover {
   background-color: pink;
   cursor: pointer;
+}
+
+.checked-box {
+  text-decoration: line-through;
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    width: 40rem;
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+
+  50% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidein {
+  0% {
+    width: 40rem;
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+
+  50% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes popin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

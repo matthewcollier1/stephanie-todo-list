@@ -9,7 +9,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div id="container">
+        <div className="container">
           <TodoList />
         </div>
       </Layout>
