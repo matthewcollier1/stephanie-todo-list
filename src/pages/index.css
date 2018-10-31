@@ -1,5 +1,6 @@
 body {
-  background-color: #66ccff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(96, 0, 120, 0.25)), to(rgba(34, 65, 187, 0.81)));
+  background: linear-gradient(rgba(96, 0, 120, 0.25), rgba(34, 65, 187, 0.81));
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -8,12 +9,6 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .bird {
@@ -79,29 +74,29 @@ body {
 
 .bird-container--one {
   -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  animation-duration: 15s;
   -webkit-animation-delay: 0;
-          animation-delay: 0;
+  animation-delay: 0;
 }
 
 .bird-container--two {
   -webkit-animation-duration: 16s;
-          animation-duration: 16s;
+  animation-duration: 16s;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 .bird-container--three {
   -webkit-animation-duration: 14.6s;
-          animation-duration: 14.6s;
+  animation-duration: 14.6s;
   -webkit-animation-delay: 9.5s;
-          animation-delay: 9.5s;
+  animation-delay: 9.5s;
 }
 
 .bird-container--four {
   -webkit-animation-duration: 16s;
-          animation-duration: 16s;
+  animation-duration: 16s;
   -webkit-animation-delay: 10.25s;
-          animation-delay: 10.25s;
+  animation-delay: 10.25s;
 }
 
 @-webkit-keyframes fly-cycle {
@@ -119,167 +114,175 @@ body {
 @-webkit-keyframes fly-right-one {
   0% {
     -webkit-transform: scale(0.3) translateX(-10vw);
-            transform: scale(0.3) translateX(-10vw);
+    transform: scale(0.3) translateX(-10vw);
   }
 
   10% {
     -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
-            transform: translateY(2vh) translateX(10vw) scale(0.4);
+    transform: translateY(2vh) translateX(10vw) scale(0.4);
   }
 
   20% {
     -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
-            transform: translateY(0vh) translateX(30vw) scale(0.5);
+    transform: translateY(0vh) translateX(30vw) scale(0.5);
   }
 
   30% {
     -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
-            transform: translateY(4vh) translateX(50vw) scale(0.6);
+    transform: translateY(4vh) translateX(50vw) scale(0.6);
   }
 
   40% {
     -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
-            transform: translateY(2vh) translateX(70vw) scale(0.6);
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
   }
 
   50% {
     -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
-            transform: translateY(0vh) translateX(90vw) scale(0.6);
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
   }
 
   60% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
   }
 
   100% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
   }
 }
 
 @keyframes fly-right-one {
   0% {
     -webkit-transform: scale(0.3) translateX(-10vw);
-            transform: scale(0.3) translateX(-10vw);
+    transform: scale(0.3) translateX(-10vw);
   }
 
   10% {
     -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
-            transform: translateY(2vh) translateX(10vw) scale(0.4);
+    transform: translateY(2vh) translateX(10vw) scale(0.4);
   }
 
   20% {
     -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
-            transform: translateY(0vh) translateX(30vw) scale(0.5);
+    transform: translateY(0vh) translateX(30vw) scale(0.5);
   }
 
   30% {
     -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
-            transform: translateY(4vh) translateX(50vw) scale(0.6);
+    transform: translateY(4vh) translateX(50vw) scale(0.6);
   }
 
   40% {
     -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
-            transform: translateY(2vh) translateX(70vw) scale(0.6);
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
   }
 
   50% {
     -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
-            transform: translateY(0vh) translateX(90vw) scale(0.6);
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
   }
 
   60% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
   }
 
   100% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
   }
 }
 
 @-webkit-keyframes fly-right-two {
   0% {
     -webkit-transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-            transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+    transform: translateY(-2vh) translateX(-10vw) scale(0.5);
   }
 
   10% {
     -webkit-transform: translateY(0vh) translateX(10vw) scale(0.4);
-            transform: translateY(0vh) translateX(10vw) scale(0.4);
+    transform: translateY(0vh) translateX(10vw) scale(0.4);
   }
 
   20% {
     -webkit-transform: translateY(-4vh) translateX(30vw) scale(0.6);
-            transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    transform: translateY(-4vh) translateX(30vw) scale(0.6);
   }
 
   30% {
     -webkit-transform: translateY(1vh) translateX(50vw) scale(0.45);
-            transform: translateY(1vh) translateX(50vw) scale(0.45);
+    transform: translateY(1vh) translateX(50vw) scale(0.45);
   }
 
   40% {
     -webkit-transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-            transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
   }
 
   50% {
     -webkit-transform: translateY(0vh) translateX(90vw) scale(0.45);
-            transform: translateY(0vh) translateX(90vw) scale(0.45);
+    transform: translateY(0vh) translateX(90vw) scale(0.45);
   }
 
   51% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
 
   100% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
 }
 
 @keyframes fly-right-two {
   0% {
     -webkit-transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-            transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+    transform: translateY(-2vh) translateX(-10vw) scale(0.5);
   }
 
   10% {
     -webkit-transform: translateY(0vh) translateX(10vw) scale(0.4);
-            transform: translateY(0vh) translateX(10vw) scale(0.4);
+    transform: translateY(0vh) translateX(10vw) scale(0.4);
   }
 
   20% {
     -webkit-transform: translateY(-4vh) translateX(30vw) scale(0.6);
-            transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    transform: translateY(-4vh) translateX(30vw) scale(0.6);
   }
 
   30% {
     -webkit-transform: translateY(1vh) translateX(50vw) scale(0.45);
-            transform: translateY(1vh) translateX(50vw) scale(0.45);
+    transform: translateY(1vh) translateX(50vw) scale(0.45);
   }
 
   40% {
     -webkit-transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-            transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
   }
 
   50% {
     -webkit-transform: translateY(0vh) translateX(90vw) scale(0.45);
-            transform: translateY(0vh) translateX(90vw) scale(0.45);
+    transform: translateY(0vh) translateX(90vw) scale(0.45);
   }
 
   51% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
 
   100% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
+}
+
+.background {
+  position: inherit !important;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2;
+  z-index: 1;
 }

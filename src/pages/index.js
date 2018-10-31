@@ -1,35 +1,44 @@
 import React from 'react'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 
 import './index.css'
 import TodoList from '../components/TodoList'
 
-class IndexPage extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <div className="container">
-          <div class="bird-container bird-container--one">
-            <div class="bird bird--one" />
-          </div>
+export default ({ data }) => (
+  <Layout>
+    <div className="container">
+      <div className="bird-container bird-container--one">
+        <div className="bird bird--one" />
+      </div>
 
-          <div class="bird-container bird-container--two">
-            <div class="bird bird--two" />
-          </div>
+      <div className="bird-container bird-container--two">
+        <div className="bird bird--two" />
+      </div>
 
-          <div class="bird-container bird-container--three">
-            <div class="bird bird--three" />
-          </div>
+      <div className="bird-container bird-container--three">
+        <div className="bird bird--three" />
+      </div>
 
-          <div class="bird-container bird-container--four">
-            <div class="bird bird--four" />
-          </div>
-          <TodoList />
-        </div>
-      </Layout>
-    )
+      <div className="bird-container bird-container--four">
+        <div className="bird bird--four" />
+      </div>
+      <TodoList />
+    </div>
+
+    <Img fluid={data.imageOne.childImageSharp.fluid} className="background" />
+  </Layout>
+)
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "background.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
   }
-}
-
-export default IndexPage
+`
