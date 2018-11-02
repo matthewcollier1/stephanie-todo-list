@@ -29,7 +29,14 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>{children}</div>
+        <div
+          style={{
+            position: 'relative',
+            overflow: 'hidden',
+          }}
+        >
+          {children}
+        </div>
       </>
     )}
   />
